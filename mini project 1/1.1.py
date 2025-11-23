@@ -35,8 +35,8 @@ from sklearn.metrics import accuracy_score, confusion_matrix, classification_rep
 
 
 # Load the data
-train_data1 = pd.read_csv(r"C:\Users\saini\Downloads\CS771\mini-project-1\mini-project-1\datasets\train\train_emoticon.csv")
-valid_data1 = pd.read_csv(r"C:\Users\saini\Downloads\CS771\mini-project-1\mini-project-1\datasets\valid\valid_emoticon.csv")
+train_data1 = pd.read_csv(r"C:\Users\venkatesh\Downloads\CS771\mini-project-1\mini-project-1\datasets\train\train_emoticon.csv")
+valid_data1 = pd.read_csv(r"C:\Users\venkatesh\Downloads\CS771\mini-project-1\mini-project-1\datasets\valid\valid_emoticon.csv")
 
 x_train1 = train_data1['input_emoticon']
 y_train1 = train_data1['label']
@@ -134,7 +134,7 @@ print(f"Validation Loss: {val_loss:.4f}, Validation Accuracy: {val_accuracy:.4f}
 
 
 # Load the test data
-test_data1 = pd.read_csv(r"C:\Users\saini\Downloads\CS771\mini-project-1\mini-project-1\datasets\test\test_emoticon.csv")
+test_data1 = pd.read_csv(r"C:\Users\venkatesh\Downloads\CS771\mini-project-1\mini-project-1\datasets\test\test_emoticon.csv")
 x_test1 = test_data1['input_emoticon']
 
 # Add spaces to emojis for the test data
