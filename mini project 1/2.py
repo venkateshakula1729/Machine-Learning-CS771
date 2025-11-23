@@ -36,14 +36,14 @@ from sklearn.metrics import accuracy_score, confusion_matrix, classification_rep
 # prompt: mount google drive
 
 # Load the data
-train_data1 = pd.read_csv(r"C:\Users\saini\Downloads\CS771\mini-project-1\mini-project-1\datasets\train\train_emoticon.csv")
-valid_data1 = pd.read_csv(r"C:\Users\saini\Downloads\CS771\mini-project-1\mini-project-1\datasets\valid\valid_emoticon.csv")
+train_data1 = pd.read_csv(r"C:\Users\venkatesh\Downloads\CS771\mini-project-1\mini-project-1\datasets\train\train_emoticon.csv")
+valid_data1 = pd.read_csv(r"C:\Users\venkatesh\Downloads\CS771\mini-project-1\mini-project-1\datasets\valid\valid_emoticon.csv")
 
-train_data2 = np.load(r"C:\Users\saini\Downloads\CS771\mini-project-1\mini-project-1\datasets\train\train_feature.npz")
-valid_data2 = np.load(r"C:\Users\saini\Downloads\CS771\mini-project-1\mini-project-1\datasets\valid\valid_feature.npz")
+train_data2 = np.load(r"C:\Users\venkatesh\Downloads\CS771\mini-project-1\mini-project-1\datasets\train\train_feature.npz")
+valid_data2 = np.load(r"C:\Users\venkatesh\Downloads\CS771\mini-project-1\mini-project-1\datasets\valid\valid_feature.npz")
 
-train_data3 = pd.read_csv(r"C:\Users\saini\Downloads\CS771\mini-project-1\mini-project-1\datasets\train\train_text_seq.csv")
-valid_data3 = pd.read_csv(r"C:\Users\saini\Downloads\CS771\mini-project-1\mini-project-1\datasets\valid\valid_text_seq.csv")
+train_data3 = pd.read_csv(r"C:\Users\venkatesh\Downloads\CS771\mini-project-1\mini-project-1\datasets\train\train_text_seq.csv")
+valid_data3 = pd.read_csv(r"C:\Users\venkatesh\Downloads\CS771\mini-project-1\mini-project-1\datasets\valid\valid_text_seq.csv")
 
 x_train1 = train_data1['input_emoticon']
 y_train1 = train_data1['label']
@@ -294,9 +294,9 @@ model.fit(X_train_combined, y_train1)
 # Make predictions
 y_pred = model.predict(X_valid_combined)
 
-test_data1 = pd.read_csv(r"C:\Users\saini\Downloads\CS771\mini-project-1\mini-project-1\datasets\test\test_emoticon.csv")
-test_data2 = np.load(r"C:\Users\saini\Downloads\CS771\mini-project-1\mini-project-1\datasets\test\test_feature.npz")
-test_data3 = pd.read_csv(r"C:\Users\saini\Downloads\CS771\mini-project-1\mini-project-1\datasets\test\test_text_seq.csv")
+test_data1 = pd.read_csv(r"C:\Users\venkatesh\Downloads\CS771\mini-project-1\mini-project-1\datasets\test\test_emoticon.csv")
+test_data2 = np.load(r"C:\Users\venkatesh\Downloads\CS771\mini-project-1\mini-project-1\datasets\test\test_feature.npz")
+test_data3 = pd.read_csv(r"C:\Users\venkatesh\Downloads\CS771\mini-project-1\mini-project-1\datasets\test\test_text_seq.csv")
 
 x_test1 = test_data1['input_emoticon']
 print(f"x_test1 1: {len(x_test1[0])}")
