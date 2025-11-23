@@ -54,8 +54,8 @@ print(c)
 
 
 # Load the data
-train_data3 = pd.read_csv(r"C:\Users\saini\Downloads\CS771\mini-project-1\mini-project-1\datasets\train\train_text_seq.csv")
-valid_data3 = pd.read_csv(r"C:\Users\saini\Downloads\CS771\mini-project-1\mini-project-1\datasets\valid\valid_text_seq.csv")
+train_data3 = pd.read_csv(r"C:\Users\venkatesh\Downloads\CS771\mini-project-1\mini-project-1\datasets\train\train_text_seq.csv")
+valid_data3 = pd.read_csv(r"C:\Users\venkatesh\Downloads\CS771\mini-project-1\mini-project-1\datasets\valid\valid_text_seq.csv")
 
 x_train3 = train_data3['input_str']
 y_train3 = train_data3['label']
@@ -207,7 +207,7 @@ for i, result in enumerate(final_results):
 
 # Prediction
 # Load the test data
-test_data3 = pd.read_csv(r"C:\Users\saini\Downloads\CS771\mini-project-1\mini-project-1\datasets\test\test_text_seq.csv")
+test_data3 = pd.read_csv(r"C:\Users\venkatesh\Downloads\CS771\mini-project-1\mini-project-1\datasets\test\test_text_seq.csv")
 x_test3 = test_data3['input_str']
 
 # Preprocess the test data using the same function
