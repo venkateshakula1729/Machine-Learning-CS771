@@ -35,8 +35,8 @@ from sklearn.metrics import accuracy_score, confusion_matrix, classification_rep
 
 
 # Load the data
-train_data2 = np.load(r"C:\Users\saini\Downloads\CS771\mini-project-1\mini-project-1\datasets\train\train_feature.npz")
-valid_data2 = np.load(r"C:\Users\saini\Downloads\CS771\mini-project-1\mini-project-1\datasets\valid\valid_feature.npz")
+train_data2 = np.load(r"C:\Users\venkatesh\Downloads\CS771\mini-project-1\mini-project-1\datasets\train\train_feature.npz")
+valid_data2 = np.load(r"C:\Users\venkatesh\Downloads\CS771\mini-project-1\mini-project-1\datasets\valid\valid_feature.npz")
 
 # Split into train and test sets (assuming 'valid_data' is your test data)
 x_train2 = train_data2['features']
@@ -71,7 +71,7 @@ print("Accuracy:", accuracy2)
 
 
 # Load the test data
-test_data2 = np.load(r"C:\Users\saini\Downloads\CS771\mini-project-1\mini-project-1\datasets\test\test_feature.npz")
+test_data2 = np.load(r"C:\Users\venkatesh\Downloads\CS771\mini-project-1\mini-project-1\datasets\test\test_feature.npz")
 
 # Extract features from the test data
 x_test2 = test_data2['features']
