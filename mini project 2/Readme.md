@@ -2,6 +2,16 @@
 
 This project demonstrates a continual learning framework using a prototype-based model applied to the CIFAR-10 dataset. It involves feature extraction, continual learning on datasets with similar input distributions, and adaptation to datasets with diverse distributions.
 
+## Problem Statement
+
+Traditional machine learning models suffer from **catastrophic forgetting** when learning new tasks sequentially. This project tackles the challenge of training a single, fixed-capacity model on a stream of 20 CIFAR-10 subsets without losing performance on previously learned datasets.
+
+### Dataset Structure
+- **D1-D10**: Same input distribution p(x)
+- **D11-D20**: Different input distributions with domain shifts
+- **Constraint**: Only D1 is labeled; remaining datasets are unlabeled
+- **Evaluation**: 20 held-out labeled datasets for accuracy assessment
+  
 ## Folder Structure
 
 The folder contains the following files:
